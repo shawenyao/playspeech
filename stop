@@ -1,0 +1,2 @@
+pkill -f playspeech.py
+pkill -f tts_server.py

@@ -1,0 +1,2 @@
+nohup python3 -u /home/pi/Python/playspeech/playspeech.py > /home/pi/Python/playspeech/playspeech.log &
+nohup python3 -u /home/pi/Python/playspeech/tts_server.py > /home/pi/Python/playspeech/tts_server.log &
