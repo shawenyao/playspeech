@@ -19,5 +19,6 @@ while True:
                 continue
             
             os.rename(f"{dir}/unplayed/{file}", f"{dir}/played/{file}")
+            os.remove(f"{dir}/played/{file}")
         except:
             pass
