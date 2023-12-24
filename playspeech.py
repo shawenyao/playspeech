@@ -6,6 +6,16 @@ from server_config import dir
 
 pygame.mixer.init()
 
+files = glob.glob(dir + '/played/*.mp3')
+for f in files:
+    os.remove(f)
+files = glob.glob(dir + '/unplayed/*.mp3')
+for f in files:
+    os.remove(f)
+files = glob.glob(dir + '/temp/*.mp3')
+for f in files:
+    os.remove(f)
+
 os.chdir(dir + "/unplayed")
 
 while True:
